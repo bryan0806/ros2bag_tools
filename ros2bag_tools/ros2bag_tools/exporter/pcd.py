@@ -40,11 +40,11 @@ def field_size(datatype):
 
 def field_type_str(datatype):
     if datatype == INT8 or datatype == INT16 or datatype == INT32:
-        return 'i'
+        return 'I'
     elif datatype == UINT8 or datatype == UINT16 or datatype == UINT32:
-        return 'u'
+        return 'U'
     elif datatype == FLOAT32 or datatype == FLOAT64:
-        return 'f'
+        return 'F'
     else:
         raise TypeError('unknown pcd datatype')
 
